@@ -1,39 +1,26 @@
+//******************************
+//  Site Sass
+//  Created: Wil 
+//******************************
+  
 @import "variables.sass"
 @import "partial.sass"
 @import "nesting.sass"
 @import "fonction.sass"
 @import "boucle.sass"
 @import "remification.sass"
+@import "body.sass"
+@import "nav.sass"
+@import "header.sass"
+@import "actu.sass"
+@import "footer.sass"
 
-@mixin big-blue-text
-  font-family: Arial
-  font-size: 25px
-  font-weight: bold
-  color: #0000ff
 
-h1
-  color: $primary-color
-  font: $primary-font
+.bg-head
+  width: 100%
+  height: auto
+  background-image: url(../images/header.jpeg)
+  background-position: center
+  background-size: cover
 
-h2
-  color: $secondary-color
-  font: $primary-font
 
-.gros-text-bleu
-  @include big-blue-text
-
-.button-scope
-  margin: 5px
-  border-radius: 2px
-
-.home-button
-  @extend .button-scope
-  background-color: $bg-dark
-  color: $white
-
-.back-button
-  @extend .home-button
-
-.dog
-  height: 500px
-  background-image: url("../images/dog.png")

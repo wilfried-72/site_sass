@@ -1,14 +1,33 @@
 @import "variables.sass"
 
-@for $i from 1 through 4
-  .width-#{$i}
-    width: 10em + $i
-@for $i from 1 to 4
-  .height-#{$i}
-    height: 25em * $i
+// @for $i from 1 through 4
+//   .width-#{$i}
+//     width: 10em + $i
+// @for $i from 1 to 4
+//   .height-#{$i}
+//     height: 25em * $i
 
-$list: dog cat bird dolphin
+// $list: dog cat bird dolphin
+// @each $i in $list
+//   .image-#{$i}
+//     height: 500px
+//     background-image: url("../images/#{$i}.png")
+
+
+// creer mes class .bg-"color; background color"
+$list: blue green red yellow purple cyan pink white rosybrown
 @each $i in $list
-  .image-#{$i}
-    height: 500px
-    background-image: url("../images/#{$i}.png")
+  .bg-#{$i}
+    background-color: #{$i}
+
+// creer mes class .br-"color; border color"
+$list: blue green red yellow purple cyan pink white rosybrown
+@each $i in $list
+  .br-#{$i}
+    border: solid 2px #{$i} 
+
+// creer mes class .txt-"color; text color"
+$list: blue green red yellow purple cyan pink white rosybrown
+@each $i in $list
+  .txt-#{$i}
+    color: #{$i}
