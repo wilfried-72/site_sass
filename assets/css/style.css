@@ -1,46 +1,29 @@
-.btn-nav {
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
-  border: solid 2px blue; }
-  .btn-nav:hover {
-    background-color: #d2d0dd;
-    border-radius: 10px; }
-  .btn-nav:active {
-    border-radius: 10px;
-    color: white;
-    background-color: black; }
+.txt-blue {
+  color: blue; }
 
-.h3-1, .h3-2, .h3-3 {
-  color: white;
+.txt-green {
   color: green; }
 
-.bg-blue {
-  background-color: blue; }
+.txt-red {
+  color: red; }
 
-.bg-green {
-  background-color: green; }
+.txt-yellow {
+  color: yellow; }
 
-.bg-red {
-  background-color: red; }
+.txt-purple {
+  color: purple; }
 
-.bg-yellow {
-  background-color: yellow; }
+.txt-cyan {
+  color: cyan; }
 
-.bg-purple {
-  background-color: purple; }
+.txt-pink {
+  color: pink; }
 
-.bg-cyan {
-  background-color: cyan; }
+.txt-white {
+  color: white; }
 
-.bg-pink {
-  background-color: pink; }
-
-.bg-white {
-  background-color: white; }
-
-.bg-rosybrown {
-  background-color: rosybrown; }
+.txt-rosybrown {
+  color: rosybrown; }
 
 .br-blue {
   border: solid 2px blue; }
@@ -69,32 +52,39 @@
 .br-rosybrown {
   border: solid 2px rosybrown; }
 
-.txt-blue {
-  color: blue; }
+.bg-blue {
+  background-color: blue; }
 
-.txt-green {
-  color: green; }
+.bg-green {
+  background-color: green; }
 
-.txt-red {
-  color: red; }
+.bg-red {
+  background-color: red; }
 
-.txt-yellow {
-  color: yellow; }
+.bg-yellow {
+  background-color: yellow; }
 
-.txt-purple {
-  color: purple; }
+.bg-purple {
+  background-color: purple; }
 
-.txt-cyan {
-  color: cyan; }
+.bg-cyan {
+  background-color: cyan; }
 
-.txt-pink {
-  color: pink; }
+.bg-pink {
+  background-color: pink; }
 
-.txt-white {
-  color: white; }
+.bg-white {
+  background-color: white; }
 
-.txt-rosybrown {
-  color: rosybrown; }
+.bg-rosybrown {
+  background-color: rosybrown; }
+
+.bg-head {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/header.jpeg);
+  background-position: center;
+  background-size: cover; }
 
 body {
   padding: 0;
@@ -110,11 +100,46 @@ h1, h2, h3, .h3-1, .h3-2, .h3-3 {
 li {
   list-style: none; }
 
-.bg-head {
+.h3-1, .h3-2, .h3-3 {
+  color: black; }
+  .h3-1:hover, .h3-2:hover, .h3-3:hover {
+    color: purple; }
+
+#grid > nav {
+  grid-area: nav; }
+
+#grid > header {
+  grid-area: header; }
+
+#grid > actu {
+  grid-area: actu; }
+
+#grid > form {
+  grid-area: form; }
+
+#grid > footer {
+  grid-area: footer; }
+
+#grid {
+  display: grid;
   width: 100%;
   height: auto;
-  background-image: url(../images/header.jpeg);
-  background-position: center;
-  background-size: cover; }
+  grid-template-columns: 20% 20% 10% 10% 20% 20%;
+  grid-row-gap: 5px;
+  grid-template-rows: auto;
+  grid-template-areas: "nav nav nav nav nav nav" "header header header header header header" "actu actu actu actu actu actu" "form form form form form form" "footer footer footer footer footer footer"; }
+
+.btn-nav {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: solid 2px blue; }
+  .btn-nav:hover {
+    background-color: #d2d0dd;
+    border-radius: 10px; }
+  .btn-nav:active {
+    border-radius: 10px;
+    color: white;
+    background-color: black; }
 
 /*# sourceMappingURL=style.css.map */
