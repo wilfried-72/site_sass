@@ -1,1 +1,20 @@
 @import "variables.sass"
+
+@mixin actu-grid
+    display: grid
+    width: 100%
+    height: auto
+    grid-column-gap: 5px
+    grid-template-columns: 15px 1fr 1fr 1fr 15px
+    grid-template-rows: auto
+    grid-template-areas: ". . t-actu . ." ". a b c ."
+
+@mixin card-grid
+    display: grid
+    width: 100%
+    height: auto
+    grid-column-gap: 5px
+    grid-template-columns: 5px 1fr 1fr 1fr 5px
+    grid-row-gap: 5px
+    grid-auto-rows: minmax(min-content, max-content)
+    grid-template-areas: " . img img img ." ". title title . . " ". desc desc desc ." " . . . date ."

@@ -22,9 +22,6 @@
 .txt-white {
   color: white; }
 
-.txt-rosybrown {
-  color: rosybrown; }
-
 .br-blue {
   border: solid 2px blue; }
 
@@ -49,9 +46,6 @@
 .br-white {
   border: solid 2px white; }
 
-.br-rosybrown {
-  border: solid 2px rosybrown; }
-
 .bg-blue {
   background-color: blue; }
 
@@ -75,9 +69,6 @@
 
 .bg-white {
   background-color: white; }
-
-.bg-rosybrown {
-  background-color: rosybrown; }
 
 .bg-head {
   width: 100%;
@@ -109,16 +100,16 @@ li {
   grid-area: nav; }
 
 #grid > header {
-  grid-area: header; }
+  grid-area: head; }
 
-#grid > actu {
+#grid > #actu {
   grid-area: actu; }
 
 #grid > form {
   grid-area: form; }
 
 #grid > footer {
-  grid-area: footer; }
+  grid-area: foot; }
 
 #grid {
   display: grid;
@@ -127,9 +118,30 @@ li {
   grid-template-columns: 20% 20% 10% 10% 20% 20%;
   grid-row-gap: 5px;
   grid-template-rows: auto;
-  grid-template-areas: "nav nav nav nav nav nav" "header header header header header header" "actu actu actu actu actu actu" "form form form form form form" "footer footer footer footer footer footer"; }
+  grid-template-areas: "nav nav nav nav nav nav" "head head head head head head" "actu actu actu actu actu actu" "form form form form form form" "foot foot foot foot foot foot"; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.item {
+  padding: 5px;
+  margin: 5px; }
+
+nav > img {
+  width: 100%;
+  height: auto;
+  grid-area: nav-logo; }
+
+nav > h1 {
+  grid-area: t-nav; }
+
+nav > ul {
+  grid-area: ul-nav; }
 
 .btn-nav {
+  grid-area: nav-btn;
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
@@ -141,5 +153,80 @@ li {
     border-radius: 10px;
     color: white;
     background-color: black; }
+
+#grid > nav {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 15px 100px 10% 1fr 1fr 1fr 15px;
+  grid-template-rows: 7vh;
+  grid-template-areas: "nav-btn nav-logo t-nav . . ul-nav ."; }
+
+header > h1 {
+  grid-area: t-header; }
+
+header > h3 {
+  grid-area: histo; }
+
+#grid > header {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 7vh 1fr;
+  grid-template-areas: " . t-header  . " " . histo . "; }
+
+#actu > h1 {
+  grid-area: t-actu; }
+
+#actu > .card-a {
+  grid-area: a; }
+
+#actu > .card-b {
+  grid-area: b; }
+
+#actu > .card-c {
+  grid-area: c; }
+
+#grid > actu {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-column-gap: 5px;
+  grid-template-columns: 15px 1fr 1fr 1fr 15px;
+  grid-template-rows: auto;
+  grid-template-areas: ". . t-actu . ." ". a b c ."; }
+
+.card > img {
+  padding: 5px 5px 5px 5px;
+  justify-items: center;
+  align-self: center;
+  width: 100%;
+  height: auto;
+  grid-area: img; }
+
+.card > h2 {
+  background-color: white;
+  color: blue;
+  grid-area: title; }
+
+.card > h3 {
+  background-color: white;
+  color: blueviolet;
+  grid-area: desc; }
+
+.card > h4 {
+  background-color: white;
+  grid-area: date; }
+
+#actu > .card {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-column-gap: 5px;
+  grid-template-columns: 5px 1fr 1fr 1fr 5px;
+  grid-row-gap: 5px;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-template-areas: " . img img img ." ". title title . . " ". desc desc desc ." " . . . date ."; }
 
 /*# sourceMappingURL=style.css.map */

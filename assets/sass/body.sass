@@ -1,58 +1,12 @@
 @import "variables.sass"
-@import "function.sass"
 
-body
-  padding: 0
-  margin: 0
-  width: 100%
-  height: auto
-
-h1,h2,h3,.h3-1,.h3-2,.h3-3
-  align-self: center
-  text-align: center
-  padding: 5px 5px 5px 5px
-
-li
-  list-style: none
-
-.h3-1,.h3-2,.h3-3
-  color: $black
-  &:hover
-    color: $purple
-
-// creer class .bg-"color; background color"
-$list: nav header actu form footer
-@each $i in $list
-  #grid>#{$i}
-    grid-area: #{$i}
-
-#grid
+@mixin body-grid 
   display: grid
   width: 100%
   height: auto
   grid-template-columns: 20% 20% 10% 10% 20% 20%
   grid-row-gap: 5px
   grid-template-rows: auto
-  grid-template-areas: "nav nav nav nav nav nav" "header header header header header header" "actu actu actu actu actu actu" "form form form form form form" "footer footer footer footer footer footer"
+  grid-template-areas: "nav nav nav nav nav nav" "head head head head head head" "actu actu actu actu actu actu" "form form form form form form" "foot foot foot foot foot foot"
 
-  // $list: nav header actu form footer
-  // grid-template-areas:
-  // @each $i in $list
-  // "+#{$i}+""+#{$i}+""+#{$i}+""+#{$i}+""+#{$i}+""+#{$i}+"
-  
 
-// #grid {
-//   display: grid
-//   width: 100%
-//   height: auto
-//   grid-template-columns: 20% 20% 10% 10% 20% 20%
-//   grid-row-gap: 5px
-//   grid-template-rows: auto
-//   grid-template-areas:
-//     "nav nav nav nav nav nav"
-//     "head head head head head head"
-//     "actu actu actu actu actu actu"
-//     "form form form form form form"
-//     "foot foot foot foot foot foot"
-//   
-// }

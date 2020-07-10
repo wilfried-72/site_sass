@@ -5,7 +5,22 @@
 
 // Import les fichiers ci-dessous
 @import "variables.sass"
-@import "bg-br-txt"
+
+// creer class .txt-"color; text color"
+@each $i in $list-color
+  .txt-#{$i}
+    color: #{$i}
+
+// creer class .br-"color; border color"
+@each $i in $list-color
+  .br-#{$i}
+    border: solid 2px #{$i}
+
+// creer class .bg-"color; background color"
+
+@each $i in $list-color
+  .bg-#{$i}
+    background-color: #{$i}
 
 // creer background image"
 .bg-head
@@ -15,8 +30,165 @@
   background-position: center
   background-size: cover
 
-@import "body.sass"
-@import "nav.sass"
+body
+  padding: 0
+  margin: 0
+  width: 100%
+  height: auto
+
+h1,h2,h3,.h3-1,.h3-2,.h3-3
+  align-self: center
+  text-align: center
+  padding: 5px 5px 5px 5px
+
+li
+  list-style: none
+
+.h3-1,.h3-2,.h3-3
+  color: $black
+  &:hover
+    color: $purple
+
+// template grid body  
+
+@each $i in $list-body
+  @if ($i == nav)
+    #grid>#{$i}
+      grid-area: nav
+  @if ($i == header)
+    #grid>#{$i}
+      grid-area: head
+  @if ($i == "#actu")
+    #grid>#{$i}
+      grid-area: actu
+  @if ($i == form)
+    #grid>#{$i}
+      grid-area: form
+  @if ($i == footer)
+    #grid>#{$i}
+      grid-area: foot
+  @else 
+
+
+#grid
+  @import "body.sass"
+  @include body-grid
+
+@each $i in $list-nav
+  @if ($i == ".row")
+    #{$i}
+      display: flex
+      flex-direction: row
+      align-items: center
+  @else if ($i == ".item")
+    #{$i}
+      padding: 5px
+      margin: 5px
+  @else if ($i == img)
+    nav>#{$i}
+      width: 100%
+      height: auto
+      grid-area: nav-logo
+  @else if ($i == h1)
+    nav>#{$i}
+      grid-area: t-nav
+  @else if ($i == ul)
+    nav>#{$i}
+      grid-area: ul-nav
+
+.btn-nav
+  grid-area: nav-btn
+  padding: 10px
+  margin: 10px
+  border-radius: 10px
+  border: solid 2px $blue
+
+  &:hover
+    background-color: $bg-btn
+    border-radius: 10px
+
+  &:active
+    border-radius: 10px
+    color: $white
+    background-color: $black
+
+#grid>nav
+  @import "nav.sass"
+  @include nav-grid
+
+@each $i in $list-header
+  @if ($i == h1)
+    header>#{$i}
+      grid-area: t-header
+  @else if ($i == h3)
+    header>#{$i}
+      grid-area: histo
+
+#grid>header
+  @import "header.sass"
+  @include header-grid
+
+@each $i in $list-actu
+  @if ($i == h1)
+    #actu>#{$i}
+      grid-area: t-actu
+  @else 
+    #actu>.card-#{$i}
+      grid-area: #{$i}
+
+#grid>actu
+  @import "actu.sass"
+  @include actu-grid
+
+@each $i in $list-card
+  @if ($i == img)
+    .card>#{$i}
+      padding: 5px 5px 5px 5px
+      justify-items: center
+      align-self: center
+      width: 100%
+      height: auto
+      grid-area: img
+  @else if ($i == h2)
+    .card>#{$i}
+      background-color: white
+      color: blue
+      grid-area: title
+  @else if ($i == h3)
+    .card>#{$i}
+      background-color: white
+      color: blueviolet
+      grid-area: desc
+  @else if ($i == h4)
+    .card>#{$i}
+      background-color: white
+      grid-area: date
+
+#actu>.card
+  @import "actu.sass"
+  @include card-grid
+
+// grid-template-areas: "nav nav nav nav nav nav" "header header header header header header" "actu actu actu actu actu actu" "form form form form form form" "footer footer footer footer footer footer"
+// $area: #{"'"+$i+" "+$i+" "+$i+" "+$i+" "+$i+" "+$i+"'"}
+// grid-template-areas: $area
+// grid-template-area: #{"'"+$i+" "+$i+" "+$i+" "+$i+" "+$i+" "+$i+"''} 
+
+// #grid {
+//   display: grid
+//   width: 100%
+//   height: auto
+//   grid-template-columns: 20% 20% 10% 10% 20% 20%
+//   grid-row-gap: 5px
+//   grid-template-rows: auto
+//   grid-template-areas:
+//     "nav nav nav nav nav nav"
+//     "head head head head head head"
+//     "actu actu actu actu actu actu"
+//     "form form form form form form"
+//     "foot foot foot foot foot foot"
+//   
+// }
+
 @import "header.sass"
 @import "actu.sass"
 @import "footer.sass"

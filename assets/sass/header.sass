@@ -1,1 +1,9 @@
 @import "variables.sass"
+
+@mixin header-grid
+    display: grid
+    width: 100%
+    height: auto
+    grid-template-columns: 10% 80% 10%
+    grid-template-rows: 7vh 1fr
+    grid-template-areas: " . t-header  . " " . histo . "
