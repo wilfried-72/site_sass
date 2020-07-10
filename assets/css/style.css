@@ -130,7 +130,7 @@ li {
   margin: 5px; }
 
 nav > img {
-  width: 100%;
+  width: 50%;
   height: auto;
   grid-area: nav-logo; }
 
@@ -141,7 +141,9 @@ nav > ul {
   grid-area: ul-nav; }
 
 .btn-nav {
-  grid-area: nav-btn;
+  grid-area: nav-;
+  width: 20vh;
+  height: auto;
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
@@ -158,9 +160,9 @@ nav > ul {
   display: grid;
   width: 100%;
   height: auto;
-  grid-template-columns: 15px 100px 10% 1fr 1fr 1fr 15px;
+  grid-template-columns: 5% 20% 20% 10% 20% 20% 5%;
   grid-template-rows: 7vh;
-  grid-template-areas: "nav-btn nav-logo t-nav . . ul-nav ."; }
+  grid-template-areas: ". nav-logo t-nav . ul-nav nav-btn ."; }
 
 header > h1 {
   grid-area: t-header; }
