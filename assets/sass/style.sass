@@ -5,6 +5,7 @@
 
 // Import les fichiers ci-dessous
 @import "variables.sass"
+@import "body.sass"
 
 // creer class .txt-"color; text color"
 @each $i in $list-color
@@ -49,29 +50,7 @@ li
   &:hover
     color: $purple
 
-// template grid body  
 
-@each $i in $list-body
-  @if ($i == nav)
-    #grid>#{$i}
-      grid-area: nav
-  @if ($i == header)
-    #grid>#{$i}
-      grid-area: head
-  @if ($i == "#actu")
-    #grid>#{$i}
-      grid-area: actu
-  @if ($i == form)
-    #grid>#{$i}
-      grid-area: form
-  @if ($i == footer)
-    #grid>#{$i}
-      grid-area: foot
-  @else 
-
-
-#grid
-  @import "body.sass"
   @include body-grid
 
 @each $i in $list-nav
