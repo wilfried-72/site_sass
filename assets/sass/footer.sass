@@ -1,1 +1,89 @@
 @import "variables.sass"
+// creer le template grid footer
+
+@mixin foot-grid
+// Ecriture sass sans if, each, function, etc
+// grid principale du footer
+footer>h2 
+    grid-area: t-foo
+
+footer>.foo-a
+    grid-area: part-a
+
+footer>.foo-b 
+    grid-area: part-b
+
+footer>.foo-c 
+    grid-area: part-c
+
+// creer le grid footer
+#grid>footer
+    display: grid
+    width: 100%
+    height: auto
+    grid-column-gap: 5px
+    grid-template-columns: 15px 1fr 1fr 1fr 15px
+    grid-template-rows: auto
+    grid-template-areas: ". . t-foo . ." ". part-a part-b part-c ."
+
+// grid contact
+.contact>h2
+    grid-area: t-cont
+
+.contact>.h3-1
+    grid-area: t-name
+
+.contact>.h3-2
+    grid-area: t-fname
+
+.contact>.h3-3
+    grid-area: t-mail
+
+// creer le grid contact
+footer>.contact 
+    display: grid
+    width: 100%
+    height: auto
+    grid-template-columns: 1fr
+    grid-template-rows: 30% 15% 15% 15% 15%
+    grid-template-areas: "t-cont" "." "t-name" "t-fname"  "t-mail"
+
+// grid map    
+.map>h2
+    grid-area: t-map
+
+.map>iframe
+    width: 100%
+    height: auto
+    grid-area: map
+
+// creer le grid map 
+footer>.map 
+    display: grid
+    width: 100%
+    height: auto
+    grid-template-columns: 1fr
+    grid-template-rows: 30% 15% 15% 15% 15%
+    grid-template-areas: "t-map" "map"
+
+// grid social
+.social>h2
+    grid-area: t-social
+
+.social>.h3-1
+    grid-area: t-siret
+
+.social>.h3-2
+    grid-area: t-adress
+
+.social>.h3-3
+    grid-area: t-tel
+
+// creer le grid social
+footer>.social
+    display: grid
+    width: 100%
+    height: auto
+    grid-template-columns: 1fr
+    grid-template-rows: 30% 15% 15% 15% 15%
+    grid-template-areas: "t-social" "." "t-siret" "t-adress" "t-tel"

@@ -1,26 +1,5 @@
-.txt-blue {
-  color: blue; }
-
-.txt-green {
-  color: green; }
-
-.txt-red {
-  color: red; }
-
-.txt-yellow {
-  color: yellow; }
-
-.txt-purple {
-  color: purple; }
-
-.txt-cyan {
-  color: cyan; }
-
-.txt-pink {
-  color: pink; }
-
-.txt-white {
-  color: white; }
+.bg-nav, .bg-actu, .bg-form, .bg-foot {
+  background-color: black; }
 
 .br-blue {
   border: solid 2px blue; }
@@ -46,6 +25,9 @@
 .br-white {
   border: solid 2px white; }
 
+.br-black {
+  border: solid 2px black; }
+
 .bg-blue {
   background-color: blue; }
 
@@ -70,12 +52,35 @@
 .bg-white {
   background-color: white; }
 
-.bg-head {
-  width: 100%;
-  height: auto;
-  background-image: url(../images/header.jpeg);
-  background-position: center;
-  background-size: cover; }
+.bg-black {
+  background-color: black; }
+
+.txt-blue {
+  color: blue; }
+
+.txt-green {
+  color: green; }
+
+.txt-red {
+  color: red; }
+
+.txt-yellow {
+  color: yellow; }
+
+.txt-purple {
+  color: purple; }
+
+.txt-cyan {
+  color: cyan; }
+
+.txt-pink {
+  color: pink; }
+
+.txt-white {
+  color: white; }
+
+.txt-black {
+  color: black; }
 
 body {
   padding: 0;
@@ -95,6 +100,13 @@ li {
   color: black; }
   .h3-1:hover, .h3-2:hover, .h3-3:hover {
     color: purple; }
+
+.bg-head {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/header.jpeg);
+  background-position: center;
+  background-size: cover; }
 
 #grid > nav {
   grid-area: nav; }
@@ -130,7 +142,7 @@ li {
   margin: 5px; }
 
 nav > img {
-  width: 50%;
+  width: 100%;
   height: auto;
   grid-area: nav-logo; }
 
@@ -140,29 +152,28 @@ nav > h1 {
 nav > ul {
   grid-area: ul-nav; }
 
-.btn-nav {
-  grid-area: nav-;
-  width: 20vh;
-  height: auto;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
-  border: solid 2px blue; }
-  .btn-nav:hover {
-    background-color: #d2d0dd;
-    border-radius: 10px; }
-  .btn-nav:active {
-    border-radius: 10px;
-    color: white;
-    background-color: black; }
-
 #grid > nav {
   display: grid;
   width: 100%;
   height: auto;
-  grid-template-columns: 5% 20% 20% 10% 20% 20% 5%;
-  grid-template-rows: 7vh;
-  grid-template-areas: ". nav-logo t-nav . ul-nav nav-btn ."; }
+  grid-template-columns: 5% 10% 10% 20% 20% 20% 10% 5%;
+  grid-template-rows: auto;
+  grid-template-areas: ". nav-logo t-nav . . ul-nav nav-btn ."; }
+
+.btn-nav, .btn-form {
+  align-items: center;
+  width: 15vh;
+  height: 10vh;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: solid 2px blue;
+  grid-area: nav-btn;
+  background-color: #d2d0dd;
+  border-radius: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: black; }
 
 header > h1 {
   grid-area: t-header; }
@@ -190,7 +201,7 @@ header > h3 {
 #actu > .card-c {
   grid-area: c; }
 
-#grid > actu {
+#grid > #actu {
   display: grid;
   width: 100%;
   height: auto;
@@ -230,5 +241,121 @@ header > h3 {
   grid-row-gap: 5px;
   grid-auto-rows: minmax(min-content, max-content);
   grid-template-areas: " . img img img ." ". title title . . " ". desc desc desc ." " . . . date ."; }
+
+.ratio {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+form > h2 {
+  grid-area: t-form; }
+
+.name {
+  text-align: start;
+  grid-area: in-name; }
+
+.mail {
+  text-align: start;
+  grid-area: in-mail; }
+
+.sujet {
+  text-align: start;
+  grid-area: t-suj; }
+
+.comment {
+  text-align: start;
+  grid-area: t-text; }
+
+.btn-form {
+  background-color: #d2d0dd;
+  color: black;
+  grid-area: t-btn; }
+
+#grid > form {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 5px;
+  grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". . . .  t-btn ."; }
+
+footer > h2 {
+  grid-area: t-foo; }
+
+footer > .foo-a {
+  grid-area: part-a; }
+
+footer > .foo-b {
+  grid-area: part-b; }
+
+footer > .foo-c {
+  grid-area: part-c; }
+
+#grid > footer {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-column-gap: 5px;
+  grid-template-columns: 15px 1fr 1fr 1fr 15px;
+  grid-template-rows: auto;
+  grid-template-areas: ". . t-foo . ." ". part-a part-b part-c ."; }
+
+.contact > h2 {
+  grid-area: t-cont; }
+
+.contact > .h3-1 {
+  grid-area: t-name; }
+
+.contact > .h3-2 {
+  grid-area: t-fname; }
+
+.contact > .h3-3 {
+  grid-area: t-mail; }
+
+footer > .contact {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 15% 15% 15% 15%;
+  grid-template-areas: "t-cont" "." "t-name" "t-fname" "t-mail"; }
+
+.map > h2 {
+  grid-area: t-map; }
+
+.map > iframe {
+  width: 100%;
+  height: auto;
+  grid-area: map; }
+
+footer > .map {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 15% 15% 15% 15%;
+  grid-template-areas: "t-map" "map"; }
+
+.social > h2 {
+  grid-area: t-social; }
+
+.social > .h3-1 {
+  grid-area: t-siret; }
+
+.social > .h3-2 {
+  grid-area: t-adress; }
+
+.social > .h3-3 {
+  grid-area: t-tel; }
+
+footer > .social {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 15% 15% 15% 15%;
+  grid-template-areas: "t-social" "." "t-siret" "t-adress" "t-tel"; }
 
 /*# sourceMappingURL=style.css.map */

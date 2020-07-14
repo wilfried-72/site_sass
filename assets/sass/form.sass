@@ -1,0 +1,50 @@
+@import "variables.sass"
+// creer le template grid form
+
+$list-form: ".ratio" h2 ".name" ".mail" ".sujet" ".comment" ".btn-form"
+
+@mixin form-grid
+
+// Pour chaque item de la list, des attributs sont donnés à la classe ou à la balise via la condition if  
+@each $i in $list-form
+  @if ($i == ".ratio")
+    #{$i}
+      width: 100%
+      height: 100%
+      padding: 0
+      margin: 0
+  @else if ($i == h2)
+    form>#{$i}
+      grid-area: t-form
+  @else if ($i ==".name")
+    #{$i}
+      text-align: start
+      grid-area: in-name
+  @else if ($i ==".mail")
+    #{$i}
+      text-align: start
+      grid-area: in-mail
+  @else if ($i == ".sujet")
+    #{$i}
+      text-align: start
+      grid-area: t-suj
+  @else if ($i == ".comment")
+    #{$i}
+      text-align: start
+      grid-area: t-text
+  @else if ($i == ".btn-form")
+    #{$i}
+      @extend .btn-nav
+      background-color: $bg-btn
+      color: $black
+      grid-area: t-btn
+
+// creer le grid  
+#grid>form
+  display: grid
+  width: 100%
+  height: auto
+  grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr
+  grid-template-rows: auto
+  grid-row-gap: 5px
+  grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ."  ". . t-suj t-suj . ." ". . t-text t-text . ." ". . . .  t-btn ."

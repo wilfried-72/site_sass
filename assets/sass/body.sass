@@ -1,10 +1,10 @@
 @import "variables.sass"
+// creer le template grid body
 $list-body: nav header "#actu" form footer
 
-@mixin body-grid 
+@mixin body-grid
 
-// template grid body  
-
+// Pour chaque item de la list des attributs sont donnés à la classe ou à la balise via la condition if  
 @each $i in $list-body
   @if ($i == nav)
     #grid>#{$i}
@@ -21,8 +21,9 @@ $list-body: nav header "#actu" form footer
   @if ($i == footer)
     #grid>#{$i}
       grid-area: foot
-  @else 
+  @else
 
+// creer le grid
 #grid
   display: grid
   width: 100%
@@ -31,5 +32,3 @@ $list-body: nav header "#actu" form footer
   grid-row-gap: 5px
   grid-template-rows: auto
   grid-template-areas: "nav nav nav nav nav nav" "head head head head head head" "actu actu actu actu actu actu" "form form form form form form" "foot foot foot foot foot foot"
-
-

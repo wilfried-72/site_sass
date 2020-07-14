@@ -1,6 +1,20 @@
 @import "variables.sass"
+// creer le template grid header
+$list-header: h1 h3
 
 @mixin header-grid
+
+// Pour chaque item de la list des attributs sont donnés à la classe ou à la balise via la condition if      
+@each $i in $list-header
+    @if ($i == h1)
+        header>#{$i}
+            grid-area: t-header
+    @else if ($i == h3)
+        header>#{$i}
+            grid-area: histo
+
+// creer le grid
+#grid>header
     display: grid
     width: 100%
     height: auto

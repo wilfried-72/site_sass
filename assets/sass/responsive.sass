@@ -1,0 +1,53 @@
+@import "variables.sass"
+// creer le template grid nav, actu, form et footer pour le responsive
+@mixin response
+// Ecriture sass sans if, each, function, etc
+
+  .row
+    display: flex
+    flex-direction: column
+    align-items: center
+
+// creer le grid nav
+  nav>img 
+    width: 20%
+    height: auto
+    grid-area: nav-logo
+
+  #grid>nav
+    display: grid
+    width: 100%
+    height: auto
+    grid-template-columns: auto
+    grid-auto-rows: auto
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"
+
+  // creer le grid actu
+  #grid>#actu
+    display: grid
+    width: 100%
+    height: auto
+    grid-template-columns: auto
+    grid-row-gap: 5px
+    grid-auto-rows: auto
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."
+
+  // creer le grid form
+  #grid>form
+    display: grid
+    width: 100%
+    height: auto
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr
+    grid-template-rows: auto
+    grid-row-gap: 5px
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ."  ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."
+
+  // creer le grid footer
+  #grid>footer
+    display: grid
+    width: 100%
+    height: auto
+    grid-template-columns: 10% 40% 40% 10%
+    grid-row-gap: 5px
+    grid-auto-rows: auto
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."
