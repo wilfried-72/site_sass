@@ -1,6 +1,3 @@
-.bg-nav, .bg-actu, .bg-form, .bg-foot {
-  background-color: black; }
-
 .br-blue {
   border: solid 2px blue; }
 
@@ -357,5 +354,951 @@ footer > .social {
   grid-template-columns: 1fr;
   grid-template-rows: 30% 15% 15% 15% 15%;
   grid-template-areas: "t-social" "." "t-siret" "t-adress" "t-tel"; }
+
+@media screen and (max-width: 620px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 621px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 622px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 623px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 624px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 625px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 626px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 627px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 628px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 629px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 630px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 631px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 632px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 633px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 634px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 635px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 636px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 637px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 638px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 639px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
+@media screen and (max-width: 640px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  nav > img {
+    width: 20%;
+    height: auto;
+    grid-area: nav-logo; }
+
+  #grid > nav {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav-logo" "t-nav" "ul-nav" "btn-nav"; }
+
+  #grid > #actu {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-actu t-actu t-actu ." ". a a a ." ". b b b ." ". c c c ."; }
+
+  #grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 70px 1fr 1fr 70px 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 5px;
+    grid-template-areas: ". t-form t-form t-form t-form ." ". . in-name in-mail . ." ". . t-suj t-suj . ." ". . t-text t-text . ." ". t-btn . . . ."; }
+
+  #grid > footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas: ". t-foo t-foo ." ". part-a part-a ." ". part-b part-b ." ". part-c part-c ."; } }
 
 /*# sourceMappingURL=style.css.map */
